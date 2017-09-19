@@ -58,8 +58,7 @@ public class FXMLDocumentController implements Initializable {
             return;
         }
         
-        if( buttonValue.matches("+-*/")) {  
-        } else { 
+        if(buttonValue.equals("+") || buttonValue.equals("-") ||buttonValue.equals("/") || buttonValue.equals("*")) {  
             left = new BigDecimal(viewArea.getText());
             operator = buttonValue;
             numberInput = false;

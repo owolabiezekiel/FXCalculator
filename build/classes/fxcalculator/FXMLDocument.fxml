@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="fxcalculator.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="300.0" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="fxcalculator.FXMLDocumentController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="14.0" prefHeight="68.0" prefWidth="220.0" text="FX CALCULATOR" textFill="#a48989" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="14.0" prefHeight="68.0" prefWidth="220.0" styleClass="FXLabel" text="FX CALCULATOR" textFill="#a48989" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="10.0">
          <padding>
             <Insets left="2.0" right="2.0" />
          </padding>
@@ -20,37 +20,37 @@
       </Label>
       <HBox layoutX="15.0" layoutY="180.0" prefHeight="50.0" prefWidth="270.0" spacing="10.0" AnchorPane.topAnchor="180.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="7" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="8" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="9" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="/" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="7" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="8" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="9" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="OButton" text="/" />
          </children>
       </HBox>
       <HBox layoutX="15.0" layoutY="240.0" prefHeight="50.0" prefWidth="270.0" spacing="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="240.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="4" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="5" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="6" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="*" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="4" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="5" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="6" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="OButton" text="*" />
          </children>
       </HBox>
       <HBox layoutX="15.0" layoutY="300.0" prefHeight="50.0" prefWidth="270.0" spacing="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="300.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="1" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="2" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="3" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="-" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="1" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="2" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="3" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="OButton" text="-" />
          </children>
       </HBox>
       <HBox layoutX="15.0" layoutY="360.0" prefHeight="50.0" prefWidth="270.0" spacing="10.0" AnchorPane.topAnchor="360.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="0" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="." />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="=" />
-            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" text="+" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="0" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="." />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="Button" text="=" />
+            <Button mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="60.0" styleClass="OButton" text="+" />
          </children>
       </HBox>
-      <Button layoutX="84.0" layoutY="417.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="131.0" text="C" AnchorPane.topAnchor="420.0" />
+      <Button layoutX="84.0" layoutY="417.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="50.0" prefWidth="131.0" styleClass="CButton" text="C" AnchorPane.topAnchor="420.0" />
       <TextField fx:id="viewArea" alignment="CENTER_RIGHT" editable="false" layoutX="15.0" layoutY="84.0" prefHeight="61.0" prefWidth="270.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
          <font>
             <Font name="Arial" size="34.0" />
